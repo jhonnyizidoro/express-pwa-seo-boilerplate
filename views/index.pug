@@ -1,0 +1,12 @@
+extends templates/main
+block Content
+	.content
+		figure
+			img(data-src="/images/logo.png", title=APP_NAME, alt=`${APP_NAME} logo`)
+		h1 Hi, this is a boilerplate made with NodeJS, Express, Sass, Pug and other stuff.
+
+block Scripts
+	script.
+		window.addEventListener('DOMContentLoaded', () => {
+			LazyLoad.observe('img');
+		})

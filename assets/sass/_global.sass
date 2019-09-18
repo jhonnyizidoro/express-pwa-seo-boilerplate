@@ -1,0 +1,18 @@
+body,
+html
+	font-family: 'Montserrat', sans-serif
+	font-size: 14px
+	height: 100%
+
+@for $i from 1 through 6
+	h#{$i}
+		margin: 0
+
+.content
+	+size(100%)
+	+flex(center, center, column)
+	img
+		margin-bottom: 25px
+		width: 350px
+	h1
+		+font(1.5rem, 600)
