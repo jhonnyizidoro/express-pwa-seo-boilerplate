@@ -1,9 +1,8 @@
 extends templates/main
 block Content
-	.content
-		figure
-			img(data-src="/images/logo.png", title=APP_NAME, alt=`${APP_NAME} logo`)
-		h1 Hi, this is a boilerplate made with NodeJS, Express, Sass, Pug and other stuff.
+	.card
+		img.card__image(data-src="/images/logo.png", title=APP_NAME, alt=`${APP_NAME} logo`)
+		h1.card__content Hi, this is a boilerplate made with NodeJS, Express, Sass, Pug and other stuff.
 
 block Scripts
 	script.

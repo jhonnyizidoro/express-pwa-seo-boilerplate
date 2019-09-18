@@ -69,7 +69,7 @@ task(sass = () => {
 		}).on('error', error => {
 			let errorFile = error.file.split('/')
 			errorFile = errorFile[errorFile.length - 1]
-			console.log("\x1b[41m", "\x1b[30m", `Erro na linha ${error.line} do arquivo ${errorFile} na loja ${projectDir}.\nErro: ${error.messageOriginal}`, "\x1b[0m")
+			console.log("\x1b[41m", "\x1b[30m", `Erro in file ${errorFile}:${error.line}\nError: ${error.messageOriginal}`, "\x1b[0m")
 		}),
 		dest('public/css'),
 		browserSync.stream()
