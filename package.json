@@ -1,6 +1,6 @@
 {
 	"name": "express-pwa-seo-boilerplate",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Boilerplate for new apps",
 	"main": "app.js",
 	"author": "Jhonny Izidoro Menarim",

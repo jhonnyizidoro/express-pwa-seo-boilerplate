@@ -22,6 +22,5 @@ const getSchemaJSON = () => {
 }
 
 module.exports = {
-	getWellcomeText,
-	getSchemaJSON
+	getSchemaJSON,
 }
