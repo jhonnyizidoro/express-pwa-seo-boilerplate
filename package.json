@@ -45,6 +45,8 @@
 		"express-asset-versions": "^0.1.2",
 		"express-device": "^0.4.2",
 		"morgan": "^1.9.1",
-		"pug": "^2.0.4"
+		"pug": "^2.0.4",
+		"request": "^2.88.0",
+		"sitemap": "^5.0.1"
 	}
 }

@@ -23,10 +23,11 @@ app.set('views', `${__dirname}/views`)
 app.set('view engine', 'pug')
 app.enable('trust proxy')
 
-//Muddlewares
+//Middlewares
 app.use(morgan('dev'))
 app.use(compression())
 app.use(device.capture())
+app.use(express.urlencoded({ extended: false }))
 app.use('/', express.static(`${__dirname}/public`))
 app.use('/', express.static(`${__dirname}/public/global`))
 app.use(assets('/', `${__dirname}/public`))
