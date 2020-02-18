@@ -28,6 +28,7 @@ const imageminPngquant = require('imagemin-pngquant')
 const imageminZopfli = require('imagemin-zopfli')
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const imageminGiflossy = require('imagemin-giflossy')
+const imageminJpegtran = require('imagemin-jpegtran')
 const imageminSvgo = require('imagemin-svgo')
 const imageminCache = require('gulp-cache')
 
@@ -124,7 +125,7 @@ task(img = () => {
 					optimize: 3,
 					lossy: 2
 				}),
-				imagemin.jpegtran({
+				imageminJpegtran({
 					progressive: true
 				}),
 				imageminMozjpeg({
